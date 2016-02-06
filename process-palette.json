@@ -1,0 +1,19 @@
+{
+  "patterns" : {
+    "P1" : {
+      "expression" : "(path):(line)"
+      },
+    "P2" : {
+      "expression" : "(path)\\s+(line)",
+      "path" : "(?:\\/[\\w\\.\\-]+)+"
+    }
+  },
+  "commands" : [
+    {
+      "namespace" : "Veloxis",
+      "action" : "Start server",
+      "command" : "nodemon ./bin/www.coffee --debug 3000",
+      "stream" : true
+    }
+  ]
+}
